@@ -7,7 +7,7 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -24,4 +24,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+    @font-face {
+      font-family: 'DepartureMono';
+      src: url('../app/fonts/DepartureMono-Regular.woff') format('woff'),
+        url('../app/fonts/PPNeueMontreal-Book.otf') format('otf');
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+
 }
