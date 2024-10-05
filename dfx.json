@@ -1,20 +1,18 @@
 {
   "canisters": {
     "htv9_backend": {
-      "build": "python -m kybra htv9_backend src/htv9_backend/src/main.py src/htv9_backend/htv9_backend.did",
+      "main": "src/htv9_backend/src/main.mo",
+      "type": "motoko",
       "candid": "src/htv9_backend/htv9_backend.did",
       "gzip": true,
-      "post_install": ".kybra/htv9_backend/post_install.sh",
       "tech_stack": {
         "cdk": {
-          "kybra": {}
+          "motoko": {}
         },
         "language": {
-          "python": {}
+          "motoko": {}
         }
-      },
-      "type": "custom",
-      "wasm": ".kybra/htv9_backend/htv9_backend.wasm"
+      }
     },
     "htv9_frontend": {
       "dependencies": [
@@ -36,3 +34,4 @@
   "output_env_file": ".env",
   "version": 1
 }
+
