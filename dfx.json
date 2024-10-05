@@ -1,28 +1,17 @@
 {
   "canisters": {
     "htv9_backend": {
-      "main": "src/htv9_backend/src/main.mo",
       "type": "motoko",
-      "candid": "src/htv9_backend/htv9_backend.did",
-      "gzip": true,
-      "tech_stack": {
-        "cdk": {
-          "motoko": {}
-        },
-        "language": {
-          "motoko": {}
-        }
-      }
+      "main": "src/htv9_backend/src/main.mo",
+      "candid": "src/htv9_backend/htv9_backend.did"
     },
     "htv9_frontend": {
       "dependencies": [
         "htv9_backend"
       ],
-      "source": [
-        "src/htv9_frontend/dist"
-      ],
+      "source": [],
       "type": "assets",
-      "workspace": "htv9_frontend"
+      "workspace": "htv9-frontend"
     }
   },
   "defaults": {
@@ -34,4 +23,3 @@
   "output_env_file": ".env",
   "version": 1
 }
-
