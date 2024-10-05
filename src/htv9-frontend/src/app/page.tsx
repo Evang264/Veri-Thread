@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import "../app/globals.css";
 import Carousel from "./components/carousel";
 export default function Home() {
