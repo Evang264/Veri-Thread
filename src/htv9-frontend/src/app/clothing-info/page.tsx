@@ -11,7 +11,7 @@ export default function Page() {
 
     return (
         <section>
-            <div className="flex justify-center w-full font-ppneutral">
+            <div className="flex justify-center w-full font-ppneutral font-bold">
                 <Image className="mt-4 mb-4" src={shirt} alt="shirt" width={300} height={800} />
             </div>
             <div>
@@ -29,7 +29,7 @@ export default function Page() {
                     </nav>
                 </div>
 
-                <div className="text-gray-500 mt-3">
+                <div className="text-black mt-3 font-departure">
                     {activeTab === 'about' && (
                         <div id="card-type-tab-1" role="tabpanel" aria-labelledby="card-type-tab-item-1">
                             <p className="flex justify-left w-full text-left text-lg p-2 mt-4"><strong>Issey Miyake Cream Oversize shirt</strong></p>
