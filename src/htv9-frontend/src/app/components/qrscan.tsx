@@ -24,6 +24,32 @@ const addDataToBlockchain = async (
   await blockchainActor.add(serial_code, location, prev_location, description);
 };
 
+const verifyAndAddBlock = async (serialCode: string, location: string, prev_location: string, description: string) => {
+    try {
+      const response = await fetch(`/api/blockchain`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          serial_code: serialCode,
+          location: location,
+          prev_location: prev_location, 
+          description: description, 
+        }),
+      });
+  
+      const result = await response.json();
+      if (result.success) {
+        console.log('Block successfully added!');
+      } else {
+        console.error('Failed to add block.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+  
 
 //QR Code Scanner
 const QrCodeScanner = () => {
@@ -62,7 +88,12 @@ const QrCodeScanner = () => {
         qrScanner.destroy(); // Destroy the instance
       };
     }
-  }, []);
+    
+    if (scanResult) {
+       verifyAndAddBlock(scanResult, "location", "prev_location", "description");
+    }
+
+    }, []);
 
   return (
     <div className="text-center items-center justify-center min-h-screen p-4">
