@@ -42,7 +42,7 @@ actor Blockchain {
         var hash: Nat = 0;
         var code = serial_code;
         while (code > 0) {
-            hash := (hash * 31) + (code % 10);
+            hash := ((hash * 31) + (code % 10)) % 1000000007;
             code /= 10;
         };
         return hash;
