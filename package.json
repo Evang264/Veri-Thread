@@ -19,6 +19,8 @@
     "daisyui": "^4.12.12"
   },
   "dependencies": {
+    "@dfinity/agent": "^2.1.2",
+    "@dfinity/candid": "^2.1.2",
     "next": "^14.2.14"
   }
 }
