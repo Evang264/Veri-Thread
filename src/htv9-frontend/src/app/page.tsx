@@ -1,3 +1,4 @@
+// import Image from "next/image";
 import "../app/globals.css";
 import Carousel from "./components/carousel";
 import Card from "./components/card";

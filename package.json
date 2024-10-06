@@ -13,9 +13,12 @@
   },
   "type": "module",
   "workspaces": [
-    "src/htv9_frontend"
+    "src/htv9-frontend"
   ],
   "devDependencies": {
     "daisyui": "^4.12.12"
+  },
+  "dependencies": {
+    "next": "^14.2.14"
   }
 }
