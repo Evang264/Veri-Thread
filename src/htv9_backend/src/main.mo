@@ -11,8 +11,8 @@ actor Blockchain {
 
     var transactions: [Transaction] = [];
 
-    // function to add a new transaction
-    public func addTransaction(from: Text, to: Text, amount: Nat): async () {
+    // function to add a new transaction - API Endpoint
+    public shared func addTransaction(from: Text, to: Text, amount: Nat): async () {
         let newTransaction: Transaction = {
             from = from;
             to = to;
@@ -23,7 +23,11 @@ actor Blockchain {
         transactions := Array.append([newTransaction], transactions);
     };
 
-    public func getTransactions(): async [Transaction] {
+    // function to get a new transaction - API Endpoint
+    public shared func getTransactions(): async [Transaction] {
         return transactions;
     };
+
+    //API function to connect to QR code
+    
 }
