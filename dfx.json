@@ -9,7 +9,9 @@
       "dependencies": [
         "htv9_backend"
       ],
-      "source": [],
+      "source": [
+        "src/htv9-frontend/out"
+      ],
       "type": "assets",
       "workspace": "htv9-frontend"
     }
