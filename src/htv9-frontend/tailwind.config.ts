@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        departure: ['DepartureMono', 'sans-serif'],
+        ppneutral: ['PPNeueMontreal', 'sans-serif'], // Custom font name from @font-face
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -16,5 +20,7 @@ const config: Config = {
     },
   },
   plugins: [daisyui],
+  
 };
+
 export default config;

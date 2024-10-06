@@ -1,8 +1,8 @@
 export default function Navbar() {
     return (
-        <div className="sticky navbar bg-gray-100">
+        <nav className="navbar bg-gray-100 sticky">
             <div className="navbar-start">
-                <a className="btn btn-ghost text-xl">verithread</a>
+                <a className="btn btn-ghost text-xl font-departure font-bold">VeriThread</a>
                 
             </div>
             
@@ -25,6 +25,6 @@ export default function Navbar() {
                     
                 </div>
                 </div>
-        </div>
+        </nav>
     );
 }

@@ -11,7 +11,7 @@ export default function Page() {
 
     return (
         <section>
-            <div className="flex justify-center w-full">
+            <div className="flex justify-center w-full font-ppneutral">
                 <Image className="mt-4 mb-4" src={shirt} alt="shirt" width={300} height={800} />
             </div>
             <div>
