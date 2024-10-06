@@ -28,10 +28,35 @@ body {
     @font-face {
       font-family: 'DepartureMono';
       src: url('../app/fonts/DepartureMono-Regular.woff') format('woff'),
-        url('../app/fonts/PPNeueMontreal-Book.otf') format('otf');
+        url('../app/fonts/DepartureMono-Regular.woff') format('woff');
       font-weight: normal;
       font-style: normal;
     }
+        @font-face {
+          font-family: 'PPNeueMontreal';
+          src: url('../app/fonts/PPNeueMontreal-Book.otf') format('woff'),
+            url('../app/fonts/PPNeueMontreal-Book.otf') format('otf');
+          font-weight: normal;
+          font-style: normal;
+        }
+                @keyframes scroll {
+                  0% {
+                    transform: translateX(0);
+                  }
+        
+                  100% {
+                    transform: translateX(-100%);
+                  }
+                }
+        
+                .carousel-track {
+                  display: flex;
+                  flex-wrap: nowrap;
+                }
+        
+                .animate-scroll {
+                  animation: scroll 1ms linear infinite;
+                }
     
 
 }

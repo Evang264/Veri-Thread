@@ -1,33 +1,46 @@
+import Image from "next/image";
+import two from "../global/2.png"
+import three from "../global/3.png"
+import four from "../global/4.png"
+import five from "../global/5.png"
+import six from "../global/6.png"
+import seven from "../global/7.png"
+import eight from "../global/8.png"
+
+
+
+
+
 export default function Carousel() {
     return(
         <div className="carousel carousel-center rounded-box">
             <div className="carousel-item">
-                <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" alt="Pizza" />
+                <Image src={two} alt="2" />
             </div>
             <div className="carousel-item">
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+                <Image
+                    src={three}
+                    alt="3" />
+            </div>
+            <div className="carousel-item">
+                <Image
+                    src={four}
                     alt="Pizza" />
             </div>
             <div className="carousel-item">
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+                <Image
+                    src={five}
                     alt="Pizza" />
             </div>
             <div className="carousel-item">
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
-                    alt="Pizza" />
+                <Image src={six} alt="Pizza" />
             </div>
             <div className="carousel-item">
-                <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" alt="Pizza" />
+                <Image src={seven} alt="Pizza" />
             </div>
             <div className="carousel-item">
-                <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp" alt="Pizza" />
-            </div>
-            <div className="carousel-item">
-                <img
-                    src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+                <Image
+                    src={eight}
                     alt="Pizza" />
             </div>
 
