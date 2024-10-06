@@ -47,14 +47,14 @@ const QrCodeScanner = () => {
       </div>
 
       {scanResult && (
-        <p className="mt-4 text-xl">
+        <p className="mt-4 text-xl flex justify-center w-full text-center p-2">
           <strong>Order Verified!</strong> {scanResult}
         </p>
       )}
       <div>
-        <button className="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded mt-4">
-          Back to Orders
-          </button>
+        <a href='../collections'><button className="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded mt-4">
+          See your Orders
+          </button></a>
       </div>
 
       
