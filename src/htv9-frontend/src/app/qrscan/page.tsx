@@ -47,7 +47,7 @@ const QrCodeScanner = () => {
       </div>
 
       {scanResult && (
-        <p className="mt-4 text-xl flex justify-center w-full text-center p-2">
+        <p className="mt-4 text-xl  justify-left w-full text-center p-2">
           <strong>Order Verified!</strong> {scanResult}
         </p>
       )}

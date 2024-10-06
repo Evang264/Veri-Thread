@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-        <div className="navbar bg-gray-100">
+        <div className="sticky navbar bg-gray-100">
             <div className="navbar-start">
                 <a className="btn btn-ghost text-xl">verithread</a>
                 
