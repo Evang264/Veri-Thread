@@ -1,5 +1,6 @@
 "use client";
 
+//importing idlFactory
 import { useEffect, useRef, useState } from "react";
 import { Actor, HttpAgent } from "@dfinity/agent";
 import { Principal } from "@dfinity/principal";
@@ -23,6 +24,8 @@ const addDataToBlockchain = async (
   await blockchainActor.add(serial_code, location, prev_location, description);
 };
 
+
+//QR Code Scanner
 const QrCodeScanner = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null); // Reference to the video element
   const [scanResult, setScanResult] = useState<string | null>(null); // Scanned result
